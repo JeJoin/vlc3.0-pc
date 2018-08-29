@@ -1,0 +1,7 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/install.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/fluidlite.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/fluidlite/CMakeFiles/edit_cache.dir

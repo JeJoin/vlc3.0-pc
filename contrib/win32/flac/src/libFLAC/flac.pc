@@ -1,0 +1,11 @@
+prefix=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32
+exec_prefix=${prefix}
+libdir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib
+includedir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include
+
+Name: FLAC
+Description: Free Lossless Audio Codec Library
+Version: 1.3.2
+Cflags: -I${includedir}
+Libs:  -L${libdir} -lFLAC  -lm
+Requires:   ogg

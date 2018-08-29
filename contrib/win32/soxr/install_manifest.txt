@@ -1,0 +1,5 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/doc/README
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/doc/LICENCE
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/doc/NEWS
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib/libsoxr.a
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/soxr.h

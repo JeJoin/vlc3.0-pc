@@ -1,0 +1,187 @@
+Performing C SOURCE FILE Test SIMD_FLAG_DETECTED failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3262a/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3262a.dir/build.make CMakeFiles/cmTC_3262a.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3262a.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DSIMD_FLAG_DETECTED   -o CMakeFiles/cmTC_3262a.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:8:5: warning: SSE vector return without SSE enabled changes the ABI [-Wpsabi]
+   a = _mm_loadu_ps (vals);
+     ^
+In file included from /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/xmmintrin.h:978:1: error: inlining failed in call to always_inline ‘_mm_storeu_ps’: target specific option mismatch
+ _mm_storeu_ps (float *__P, __m128 __A)
+ ^
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:11:3: error: called from here
+   _mm_storeu_ps (vals,b);
+   ^
+In file included from /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/xmmintrin.h:181:1: error: inlining failed in call to always_inline ‘_mm_add_ps’: target specific option mismatch
+ _mm_add_ps (__m128 __A, __m128 __B)
+ ^
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:10:5: error: called from here
+   b = _mm_add_ps (a,b);
+     ^
+In file included from /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:3:0:
+/usr/lib/gcc/i686-w64-mingw32/5.3-win32/include/xmmintrin.h:929:1: error: inlining failed in call to always_inline ‘_mm_loadu_ps’: target specific option mismatch
+ _mm_loadu_ps (float const *__P)
+ ^
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c:8:5: error: called from here
+   a = _mm_loadu_ps (vals);
+     ^
+CMakeFiles/cmTC_3262a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3262a.dir/src.c.obj' failed
+make[2]: *** [CMakeFiles/cmTC_3262a.dir/src.c.obj] Error 1
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3262a/fast' failed
+make[1]: *** [cmTC_3262a/fast] Error 2
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#ifndef TEST_ARM
+#include <xmmintrin.h>
+int main()
+{
+  __m128 a, b;
+  float vals[4] = {0};
+  a = _mm_loadu_ps (vals);
+  b = a;
+  b = _mm_add_ps (a,b);
+  _mm_storeu_ps (vals,b);
+  return 0;
+}
+#else
+int main()
+{
+  __asm__ volatile("vadd.i16 q0, q0, q0");
+  return 0;
+}
+#endif
+
+Performing C SOURCE FILE Test SIMD_FLAG_DETECTED failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_267f9/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_267f9.dir/build.make CMakeFiles/cmTC_267f9.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_267f9.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DSIMD_FLAG_DETECTED /arch:SSE /fp:fast -D__SSE__   -o CMakeFiles/cmTC_267f9.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+i686-w64-mingw32-gcc: error: /arch:SSE: No such file or directory
+i686-w64-mingw32-gcc: error: /fp:fast: No such file or directory
+CMakeFiles/cmTC_267f9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_267f9.dir/src.c.obj' failed
+make[2]: *** [CMakeFiles/cmTC_267f9.dir/src.c.obj] Error 1
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_267f9/fast' failed
+make[1]: *** [cmTC_267f9/fast] Error 2
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#ifndef TEST_ARM
+#include <xmmintrin.h>
+int main()
+{
+  __m128 a, b;
+  float vals[4] = {0};
+  a = _mm_loadu_ps (vals);
+  b = a;
+  b = _mm_add_ps (a,b);
+  _mm_storeu_ps (vals,b);
+  return 0;
+}
+#else
+int main()
+{
+  __asm__ volatile("vadd.i16 q0, q0, q0");
+  return 0;
+}
+#endif
+
+Performing C SOURCE FILE Test HAVE_WORDS_BIGENDIAN failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfe6c/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_cfe6c.dir/build.make CMakeFiles/cmTC_cfe6c.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfe6c.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN   -o CMakeFiles/cmTC_cfe6c.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cfe6c.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfe6c.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_cfe6c.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_cfe6c.dir/objects.a @CMakeFiles/cmTC_cfe6c.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN    -L/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib   -Wl,--whole-archive CMakeFiles/cmTC_cfe6c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_cfe6c.exe -Wl,--out-implib,libcmTC_cfe6c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_cfe6c.dir/linklibs.rsp
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Return value: PLEASE_FILL_OUT-FAILED_TO_RUN
+Source file was:
+int main() {union {long i; char c[sizeof(long)];}
+      const u = {1}; return !!u.c[0];}
+Performing C SOURCE FILE Test HAVE_WORDS_BIGENDIAN failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fe6b9/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fe6b9.dir/build.make CMakeFiles/cmTC_fe6b9.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fe6b9.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN   -o CMakeFiles/cmTC_fe6b9.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fe6b9.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe6b9.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_fe6b9.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_fe6b9.dir/objects.a @CMakeFiles/cmTC_fe6b9.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN    -L/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib   -Wl,--whole-archive CMakeFiles/cmTC_fe6b9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_fe6b9.exe -Wl,--out-implib,libcmTC_fe6b9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_fe6b9.dir/linklibs.rsp
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Return value: PLEASE_FILL_OUT-FAILED_TO_RUN
+Source file was:
+int main() {union {long i; char c[sizeof(long)];}
+      const u = {1}; return !!u.c[0];}
+Performing C SOURCE FILE Test HAVE_WORDS_BIGENDIAN failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8f0c/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_c8f0c.dir/build.make CMakeFiles/cmTC_c8f0c.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8f0c.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN   -o CMakeFiles/cmTC_c8f0c.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_c8f0c.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8f0c.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_c8f0c.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_c8f0c.dir/objects.a @CMakeFiles/cmTC_c8f0c.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN    -L/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib   -Wl,--whole-archive CMakeFiles/cmTC_c8f0c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c8f0c.exe -Wl,--out-implib,libcmTC_c8f0c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_c8f0c.dir/linklibs.rsp
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Return value: PLEASE_FILL_OUT-FAILED_TO_RUN
+Source file was:
+int main() {union {long i; char c[sizeof(long)];}
+      const u = {1}; return !!u.c[0];}
+Performing C SOURCE FILE Test HAVE_WORDS_BIGENDIAN failed with the following output:
+Change Dir: /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_121b6/fast"
+make[1]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_121b6.dir/build.make CMakeFiles/cmTC_121b6.dir/build
+make[2]: Entering directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_121b6.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN   -o CMakeFiles/cmTC_121b6.dir/src.c.obj   -c /home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_121b6.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_121b6.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_121b6.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_121b6.dir/objects.a @CMakeFiles/cmTC_121b6.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include -g -O2   -DHAVE_WORDS_BIGENDIAN    -L/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib   -Wl,--whole-archive CMakeFiles/cmTC_121b6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_121b6.exe -Wl,--out-implib,libcmTC_121b6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_121b6.dir/linklibs.rsp
+make[2]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/CMakeTmp'
+
+Return value: PLEASE_FILL_OUT-FAILED_TO_RUN
+Source file was:
+int main() {union {long i; char c[sizeof(long)];}
+      const u = {1}; return !!u.c[0];}

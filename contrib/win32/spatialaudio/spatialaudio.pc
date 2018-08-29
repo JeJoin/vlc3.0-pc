@@ -1,0 +1,9 @@
+prefix=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libspatialaudio
+Description: Spatial audio rendering library
+Version: 0.3.0
+Libs: -L${libdir} -lspatialaudio -L/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib -lmysofa -lm -lz
+Cflags: -I${includedir} -I/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include

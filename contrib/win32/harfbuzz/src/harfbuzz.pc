@@ -1,0 +1,13 @@
+prefix=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32
+exec_prefix=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32
+libdir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib
+includedir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library
+Version: 1.4.5
+
+Libs: -L${libdir} -lharfbuzz
+Libs.private:    
+Requires.private:  
+Cflags: -I${includedir}/harfbuzz

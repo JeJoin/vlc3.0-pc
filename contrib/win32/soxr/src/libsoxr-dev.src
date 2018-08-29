@@ -1,0 +1,2 @@
+set(TARGET_HEADERS "/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/soxr.h")
+set(TARGET_PCS "")

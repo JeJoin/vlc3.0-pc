@@ -1,0 +1,9 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/package_source.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/package.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/edit_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/spatialaudio.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/spatialaudio/CMakeFiles/install.dir

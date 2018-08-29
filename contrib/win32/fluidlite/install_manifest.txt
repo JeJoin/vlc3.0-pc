@@ -1,0 +1,14 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib/libfluidlite.a
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidlite.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/types.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/settings.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/synth.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/sfont.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/ramsfont.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/log.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/misc.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/mod.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/gen.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/voice.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include/fluidsynth/version.h
+/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib/pkgconfig/fluidlite.pc

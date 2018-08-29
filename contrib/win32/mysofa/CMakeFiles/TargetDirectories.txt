@@ -1,0 +1,17 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/edit_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/package_source.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/package.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/CMakeFiles/install.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/edit_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/package_source.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/package.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/mysofa-static.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/mysofa/src/CMakeFiles/install.dir

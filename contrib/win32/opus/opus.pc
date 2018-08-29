@@ -1,0 +1,16 @@
+# Opus codec reference implementation pkg-config file
+
+prefix=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32
+exec_prefix=${prefix}
+libdir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/lib
+includedir=/home/join/Desktop/vlc3.0/vlc/contrib/i686-w64-mingw32/include
+
+Name: Opus
+Description: Opus IETF audio codec (floating-point build)
+URL: https://opus-codec.org/
+Version: 1.2.1
+Requires:
+Conflicts:
+Libs: -L${libdir} -lopus
+Libs.private: -lm
+Cflags: -I${includedir}/opus

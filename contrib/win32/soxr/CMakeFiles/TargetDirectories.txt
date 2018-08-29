@@ -1,0 +1,14 @@
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/install.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/deinstall.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/CMakeFiles/edit_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/install.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/list_install_components.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/rebuild_cache.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/soxr.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/install/strip.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/install/local.dir
+/home/join/Desktop/vlc3.0/vlc/contrib/win32/soxr/src/CMakeFiles/edit_cache.dir
